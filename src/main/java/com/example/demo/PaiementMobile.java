@@ -9,6 +9,13 @@ public class PaiementMobile  implements Paiment {
     private int montantPayer;
    public LocalDate dateDePaiementMobile;
 
+    public PaiementMobile(int id, String typePaiement, int montantPayer, LocalDate dateDePaiementMobile) {
+        this.id = id;
+        this.typePaiement = typePaiement;
+        this.montantPayer = montantPayer;
+        this.dateDePaiementMobile = LocalDate.now();
+    }
+
     public LocalDate getDateDePaiement() {
         return dateDePaiementMobile;
     }

@@ -40,7 +40,11 @@ public class Frais {
         return Objects.hash(id, nom, montant, dateLimiteDePaiement, status, etudiant);
     }
 
-  public boolean payer(List<Paiment> paiments) {
+    public boolean in_progress() {
+        if()
+    }
 
+  public boolean payer(List<Paiment> paiments) {
+       if
   }
 }
