@@ -45,6 +45,13 @@ public class Frais {
     }
 
   public boolean payer(List<Paiment> paiments) {
-       if
+
+       if(dateLimiteDePaiement.isBefore(LocalDate.now())){
+          return true;
+       }else if(dateLimiteDePaiement.isEqual(LocalDate.now())){
+           return true;
+       } else if (dateLimiteDePaiement.isAfter(LocalDate.now())) {
+            return false;
+       }
   }
 }
